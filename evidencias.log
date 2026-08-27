@@ -1,0 +1,72 @@
+Script started on 2026-08-27 14:39:52-03:00 [TERM="xterm-256color" TTY="/dev/pts/6" COLUMNS="140" LINES="12"]
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/Threads[00m$ [K]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/Threads[00m$ pwd
+[?2004l/mnt/c/Users/bielm/Threads
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/Threads[00m$ ls -la
+[?2004ltotal 1
+drwxrwxrwx 1 bielmalta bielmalta 512 Aug 27 14:39 [0m[34;42m.[0m
+drwxrwxrwx 1 bielmalta bielmalta 512 Aug 27 14:36 [34;42m..[0m
+drwxrwxrwx 1 bielmalta bielmalta 512 Aug 27 14:36 [34;42m.git[0m
+-rwxrwxrwx 1 bielmalta bielmalta  37 Aug 27 14:36 [01;32mREADME.md[0m
+-rwxrwxrwx 1 bielmalta bielmalta 512 Aug 27 14:41 [01;32mevidencias.log[0m
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/Threads[00m$ exit
+[?2004lexit
+
+Script done on 2026-08-27 14:42:43-03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-08-27 14:43:02-03:00 [TERM="xterm-256color" TTY="/dev/pts/6" COLUMNS="179" LINES="12"]
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/Threads[00m$ date
+[?2004lThu Aug 27 14:43:08 -03 2026
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/Threads[00m$ whoami
+[?2004lbielmalta
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/Threads[00m$ pwd
+[?2004l/mnt/c/Users/bielm/Threads
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/Threads[00m$ cat evidencias.log
+[?2004lScript started on 2026-08-27 14:39:52-03:00 [TERM="xterm-256color" TTY="/dev/pts/6" COLUMNS="140" LINES="12"]
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/Threads[00m$ [K]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/Threads[00m$ pwd
+[?2004l/mnt/c/Users/bielm/Threads
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/Threads[00m$ ls -la
+[?2004ltotal 1
+drwxrwxrwx 1 bielmalta bielmalta 512 Aug 27 14:39 [0m[34;42m.[0m
+drwxrwxrwx 1 bielmalta bielmalta 512 Aug 27 14:36 [34;42m..[0m
+drwxrwxrwx 1 bielmalta bielmalta 512 Aug 27 14:36 [34;42m.git[0m
+-rwxrwxrwx 1 bielmalta bielmalta  37 Aug 27 14:36 [01;32mREADME.md[0m
+-rwxrwxrwx 1 bielmalta bielmalta 512 Aug 27 14:41 [01;32mevidencias.log[0m
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/Threads[00m$ exit
+[?2004lexit
+
+Script done on 2026-08-27 14:42:43-03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-08-27 14:43:02-03:00 [TERM="xterm-256color" TTY="/dev/pts/6" COLUMNS="179" LINES="12"]
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/Threads[00m$ date
+[?2004lThu Aug 27 14:43:08 -03 2026
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/Threads[00m$ whoami
+[?2004lbielmalta
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/Threads[00m$ pwd
+[?2004l/mnt/c/Users/bielm/Threads
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/Threads[00m$ [7mls -l evidencias.log[27mls -l evidencias.log
+[?2004l-rwxrwxrwx 1 bielmalta bielmalta 3736 Aug 27 14:43 [0m[01;32mevidencias.log[0m
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/Threads[00m$ ls - l [K[K[K[K-l evidencias.log
+[?2004l-rwxrwxrwx 1 bielmalta bielmalta 4248 Aug 27 14:45 [0m[01;32mevidencias.log[0m
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/Threads[00m$ [K]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/Threads[00m$ [K]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/Threads[00m$ [7mgit check-ignore -v evidencias.log[27mgit check-ignore -v evidencias.log
+[?2004l[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/Threads[00m$ [7mls -la[27mls -la
+[?2004ltotal 8
+drwxrwxrwx 1 bielmalta bielmalta  512 Aug 27 14:39 [0m[34;42m.[0m
+drwxrwxrwx 1 bielmalta bielmalta  512 Aug 27 14:36 [34;42m..[0m
+drwxrwxrwx 1 bielmalta bielmalta  512 Aug 27 14:36 [34;42m.git[0m
+-rwxrwxrwx 1 bielmalta bielmalta   37 Aug 27 14:36 [01;32mREADME.md[0m
+-rwxrwxrwx 1 bielmalta bielmalta 4760 Aug 27 14:49 [01;32mevidencias.log[0m
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/Threads[00m$ [K]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/Threads[00m$ [K]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/Threads[00m$ [K]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/Threads[00m$ [7mcp /mnt/c/Users/bielm/Threads/evidencias.log /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads/evidencias[27m[7m.[27m[7mlog[27m[A]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/Threads[01;Script started on 2026-08-27 15:01:58-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="179" LINES="13"]
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ date
+[?2004lThu Aug 27 15:02:01 -03 2026
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ whoami
+[?2004lbielmalta
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ pwd
+[?2004l/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ [7mcd /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[27mcd /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads
+[?2004l[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ code mandelbrot.c
+[?2004l[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ [K]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ 
+[?2004l[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ 
+[?2004l[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ 
+[?2004l[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ [7mgit config user.name "Gabriel Malta"[27mgit config user.name "Gabriel Malta"
+[?2004l[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ [7mgit config user.email "SEU_EMAIL_DO_GITHUB"[27m[1Pgit config user.email "SEU_EMAIL_DO_GITHUB[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kggm@cesar.school"
+[?2004l[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ [7mgit config user.name[27m
+[7mgit config user.email[27m[A]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ git config user.name
+git config user.emai
