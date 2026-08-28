@@ -37,6 +37,21 @@ int ler_inteiro(char *texto, int *valor) {
     return 1;
 }
 
+int salvar_imagem(const char *nome, int *imagem, int largura, int altura) {
+    FILE *arquivo = fopen(nome, "w");
+    if (arquivo == NULL)
+        return 0;
+
+    for (int y = 0; y < altura; y++) {
+        for (int x = 0; x < largura; x++) {
+            fprintf(arquivo, "%d ", imagem[y * largura + x]);
+        }
+        fprintf(arquivo, "\n");
+    }
+    fclose(arquivo);
+    return 1;
+}
+
 int main(int argc, char *argv[]) {
     if (argc != 5) {
         fprintf(stderr, "Erro: quantidade de argumentos invalida.\n");
@@ -53,6 +68,12 @@ int main(int argc, char *argv[]) {
         return 1;
     }
     calcular_serial(imagem, largura, altura, max_iter);
+    
+    if (!salvar_imagem("mandelbrot_ggm_serial.pgm", imagem, largura, altura)) {
+        fprintf(stderr, "Erro: falha ao criar arquivo de saida.\n");
+        free(imagem);
+        return 1;
+    }
     free(imagem);
     return 0;
 }

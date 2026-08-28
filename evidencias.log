@@ -79,4 +79,54 @@ ggm@cesar.school
 [?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ [7m./mandelbrot 100 0 500 4[27m./mandelbrot 100 0 500 4
 [?2004lErro: parametros invalidos.
 [?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ [7m./mandelbrot[27m./mandelbrot
-[
+[?2004lErro: quantidade de argumentos invalida.
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ [K]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ -[Kscript -a evidencias.log
+[?2004lScript started, output logScript started on 2026-08-28 15:36:50-03:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="179" LINES="13"]
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ date
+[?2004lFri Aug 28 15:36:57 -03 2026
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/O file is 'evidencias.log'.
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ date
+[?2004lFri Aug 28 15:36:57 -03 2026
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ h[Kwhoami
+[?2004lbielmalta
+[?200neDrive/Documentos/CESAR/ggm/Threads[00m$ h[Kwhoami
+[?2004lbielmalta
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ pwd
+[?2004l/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive4h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ pwd
+[?2004l/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ make
+[?2004lgcc -Wall -Wextra -std=c11 -c m/Documentos/CESAR/ggm/Threads[00m$ make
+[?2004lgcc -Wall -Wextra -std=c11 -c mandelbrot.c -o mandelbrot.o
+gcc mandelbrot.o -o mandelbrot
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ [7m./mandelbrot 10 10 100 4[27m./mandelbrot 10 10 100 4
+[?2004l[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CEandelbrot.c -o mandelbrot.o
+gcc mandelbrot.o -o mandelbrot
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ [7m./mandelbrot 10 10 100 4[27m./mandelbrot 10 10 100 4
+[?2004l[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneSAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ [7mls -l mandelbrot_ggm_serial.pgm[27mls -l mandelbrot_ggm_serial.pgm
+[?2004l-rwxrwxrwx 1 bielmalta bielmalta 275 Aug 28 15:41 [0m[01;32mmandelbrot_ggm_serial.pgm[0m
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/gDrive/Documentos/CESAR/ggm/Threads[00m$ [7mls -l mandelbrot_ggm_serial.pgm[27mls -l mandelbrot_ggm_serial.pgm
+[?2004l-rwxrwxrwx 1 bielmalta bielmalta 275 Aug 28 15:41 [0m[01;32mmandelbrot_ggm_serial.pgm[0m
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ [7mcat mandelbrot_ggm_serial.pgm[27mgm/Threads[00m$ [7mcat mandelbrot_ggm_serial.pgm[27mcat mandelbrot_ggm_serial.pgm
+[?2004l2 2 2 5 5 5 5 5 5 5 
+2 2 5 7 7 7 7 7 5 5 
+2 5 7 7 10 10 22 12 7 5 
+2 7 7 10 12 255 255 255 38 7 
+2 10 12 30 22 255 255 255 38 7 
+255 255 255 255 255 255 255 255 17 7 
+2 10 12 30 22 255 255 255 38 7 
+2 7 7 10 12 255 255 255 38 7 
+2 5 7 7 10 10 22 12 7 5 
+2 2 5 7 7 7 7 7 5 5 
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbicat mandelbrot_ggm_serial.pgm
+[?2004l2 2 2 5 5 5 5 5 5 5 
+2 2 5 7 7 7 7 7 5 5 
+2 5 7 7 10 10 22 12 7 5 
+2 7 7 10 12 255 255 255 38 7 
+2 10 12 30 22 255 255 255 38 7 
+255 255 255 255 255 255 255 255 17 7 
+2 10 12 30 22 255 255 255 38 7 
+2 7 7 10 12 255 255 255 38 7 
+2 5 7 7 10 10 22 12 7 5 
+2 2 5 7 7 7 7 7 5 5 
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm
