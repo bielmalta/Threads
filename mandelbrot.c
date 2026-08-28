@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <limits.h>
 
 int calcular_pixel(int x, int y, int largura, int altura, int max_iter){
     double cr = -2.0 + (3.0 * x) / largura;
@@ -25,4 +26,33 @@ void calcular_serial(int *imagem, int largura, int altura, int max_iter) {
                 calcular_pixel(x, y, largura, altura, max_iter);
         }
     }
+}
+
+int ler_inteiro(char *texto, int *valor) {
+    char *fim;
+    long numero = strtol(texto, &fim, 10);
+    if (*texto == '\0' || *fim != '\0' || numero <= 0 || numero > INT_MAX)
+        return 0;
+    *valor = (int)numero;
+    return 1;
+}
+
+int main(int argc, char *argv[]) {
+    if (argc != 5) {
+        fprintf(stderr, "Erro: quantidade de argumentos invalida.\n");
+        return 1;
+    }
+    int largura, altura, max_iter, num_threads;
+    if (!ler_inteiro(argv[1], &largura) || !ler_inteiro(argv[2], &altura) || !ler_inteiro(argv[3], &max_iter) || !ler_inteiro(argv[4], &num_threads)) {
+        fprintf(stderr, "Erro: parametros invalidos.\n");
+        return 1;
+    }
+    int *imagem = malloc((size_t)largura * altura * sizeof(int));
+    if (imagem == NULL) {
+        fprintf(stderr, "Erro: falha na alocacao de memoria.\n");
+        return 1;
+    }
+    calcular_serial(imagem, largura, altura, max_iter);
+    free(imagem);
+    return 0;
 }

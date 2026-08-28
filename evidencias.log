@@ -69,4 +69,14 @@ drwxrwxrwx 1 bielmalta bielmalta  512 Aug 27 14:36 [34;42m.git[0m
 [?2004l[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ [7mgit config user.email "SEU_EMAIL_DO_GITHUB"[27m[1Pgit config user.email "SEU_EMAIL_DO_GITHUB[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kggm@cesar.school"
 [?2004l[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ [7mgit config user.name[27m
 [7mgit config user.email[27m[A]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ git config user.name
-git config user.emai
+git config user.email
+[?2004lGabriel Malta
+ggm@cesar.school
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ [7mgcc -Wall -Wextra -std=c11 mandelbrot.c -o mandelbrot[27mgcc -Wall -Wextra -std=c11 mandelbrot.c -o mandelbrot
+[?2004l[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ [7m./mandelbrot 100 100 500 4[27m./mandelbrot 100 100 500 4
+[?2004l[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ [7mecho $?[27mecho $?
+[?2004l0
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ [7m./mandelbrot 100 0 500 4[27m./mandelbrot 100 0 500 4
+[?2004lErro: parametros invalidos.
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ [7m./mandelbrot[27m./mandelbrot
+[
