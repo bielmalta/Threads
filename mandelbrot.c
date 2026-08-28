@@ -17,3 +17,12 @@ int calcular_pixel(int x, int y, int largura, int altura, int max_iter){
     }
     return (iter * 255) / max_iter;
 }
+
+void calcular_serial(int *imagem, int largura, int altura, int max_iter) {
+    for (int y = 0; y < altura; y++) {
+        for (int x = 0; x < largura; x++) {
+            imagem[y * largura + x] =
+                calcular_pixel(x, y, largura, altura, max_iter);
+        }
+    }
+}
