@@ -4,6 +4,17 @@
 #include <limits.h>
 #include <time.h>
 #include <omp.h>
+#include <pthread.h>
+
+typedef struct {
+    int *imagem;
+    int largura;
+    int altura;
+    int max_iter;
+    int inicio;
+    int fim;
+    int passo;
+}DadosThread;
 
 int calcular_pixel(int x, int y, int largura, int altura, int max_iter){
     double cr = -2.0 + (3.0 * x) / largura;
@@ -68,6 +79,69 @@ double tempo_atual() {
     return t.tv_sec + t.tv_nsec / 1000000000.0;
 }
 
+void *trabalho_pthreads1(void *arg) {
+    DadosThread *dados = (DadosThread *)arg;
+    for (int y = dados->inicio; y < dados->fim; y++) {
+        for (int x = 0; x < dados->largura; x++) {
+            dados->imagem[y * dados->largura + x] = calcular_pixel(x, y, dados->largura, dados->altura, dados->max_iter);
+        }
+    }
+    return NULL;
+}
+int calcular_pthreads1(int *imagem, int largura, int altura, int max_iter, int num_threads) {
+    pthread_t threads[num_threads];
+    DadosThread dados[num_threads];
+
+    int linhas = altura / num_threads;
+    for (int i = 0; i < num_threads; i++) {
+        dados[i].imagem = imagem;
+        dados[i].largura = largura;
+        dados[i].altura = altura;
+        dados[i].max_iter = max_iter;
+        dados[i].inicio = i * linhas;
+        dados[i].fim = (i == num_threads - 1) ? altura : (i + 1) * linhas; /*condicionais*/
+
+        if (pthread_create(&threads[i], NULL, trabalho_pthreads1, &dados[i]) != 0) {
+            return 0;
+        }
+    }
+    for (int i = 0; i < num_threads; i++) {
+        pthread_join(threads[i], NULL);
+    }
+    return 1;
+}
+void *trabalho_pthreads2(void *arg) {
+    DadosThread *dados = (DadosThread *)arg;
+
+    for (int y = dados->inicio; y < dados->altura; y += dados->passo) {
+        for (int x = 0; x < dados->largura; x++) {
+            dados->imagem[y * dados->largura + x] = calcular_pixel(x, y, dados->largura, dados->altura, dados->max_iter);
+        }
+    }
+    return NULL;
+}
+
+int calcular_pthreads2(int *imagem, int largura, int altura, int max_iter, int num_threads) {
+    pthread_t threads[num_threads];
+    DadosThread dados[num_threads];
+
+    for (int i = 0; i < num_threads; i++) {
+        dados[i].imagem = imagem;
+        dados[i].largura = largura;
+        dados[i].altura = altura;
+        dados[i].max_iter = max_iter;
+        dados[i].inicio = i;
+        dados[i].passo = num_threads;
+        if (pthread_create(&threads[i], NULL, trabalho_pthreads2, &dados[i]) != 0) {
+            return 0;
+        }
+    }
+    for (int i = 0; i < num_threads; i++) {
+        pthread_join(threads[i], NULL);
+    }
+    return 1;
+}
+
 int main(int argc, char *argv[]) {
     if (argc != 5) {
         fprintf(stderr, "Erro: quantidade de argumentos invalida.\n");
@@ -103,6 +177,39 @@ int main(int argc, char *argv[]) {
         free(imagem);
         return 1;
     }
+    for (int i = 0; i < largura * altura; i++)
+        imagem[i] = 0;
+
+    inicio = tempo_atual();
+
+    if (!calcular_pthreads1(imagem, largura, altura, max_iter, num_threads)) {
+        fprintf(stderr, "Erro: falha ao criar threads.\n");
+        free(imagem);
+        return 1;
+    }
+    fim = tempo_atual();
+    double tempo_pthreads1 = fim - inicio;
+
+    inicio = tempo_atual();
+
+    if (!calcular_pthreads2(imagem, largura, altura, max_iter, num_threads)) {
+        fprintf(stderr, "Erro: falha ao criar threads.\n");
+        free(imagem);
+        return 1;
+    }
+    fim = tempo_atual();
+    double tempo_pthreads2 = fim - inicio;
+
+    if (!salvar_imagem("mandelbrot_ggm_pthreads1.pgm", imagem, largura, altura)) {
+        fprintf(stderr, "Erro: falha ao criar arquivo de saida.\n");
+        free(imagem);
+        return 1;
+    }
+    if (!salvar_imagem("mandelbrot_ggm_pthreads2.pgm", imagem, largura, altura)) {
+        fprintf(stderr, "Erro: falha ao criar arquivo de saida.\n");
+        free(imagem);
+        return 1;
+    }
 
     FILE *tempos = fopen("times.txt", "w");
 
@@ -113,6 +220,8 @@ int main(int argc, char *argv[]) {
     }
     fprintf(tempos, "Serial: %.6f\n", tempo_serial);
     fprintf(tempos, "OpenMP: %.6f\n", tempo_openmp);
+    fprintf(tempos, "Pthreads1: %.6f\n", tempo_pthreads1);
+    fprintf(tempos, "Pthreads2: %.6f\n", tempo_pthreads2);
 
     fclose(tempos);
     free(imagem);
