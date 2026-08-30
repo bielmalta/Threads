@@ -24,10 +24,11 @@ Execute o programa no seguinte formato:
 ./mandelbrot largura altura max_iteracoes num_threads
 
 Onde:
-    - largura: largura da imagem
-    - altura: altura da imagem
-    - max_iteracoes: número máximo de iterações do cálculo de Mandelbrot
-    - num_threads: quantidade de threads utilizadas nas versões paralelas
+
+- largura: largura da imagem
+- altura: altura da imagem
+- max_iteracoes: número máximo de iterações do cálculo de Mandelbrot
+- num_threads: quantidade de threads utilizadas nas versões paralelas
 
 ## Limpeza
 
