@@ -1,0 +1,4 @@
+mandelbrot
+mandelbrot.o
+mandelbrot_ggm_*.pgm
+times.txt
