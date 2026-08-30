@@ -1,6 +1,9 @@
+#define _POSIX_C_SOURCE 200809L
 #include <stdio.h>
 #include <stdlib.h>
 #include <limits.h>
+#include <time.h>
+#include <omp.h>
 
 int calcular_pixel(int x, int y, int largura, int altura, int max_iter){
     double cr = -2.0 + (3.0 * x) / largura;
@@ -13,13 +16,21 @@ int calcular_pixel(int x, int y, int largura, int altura, int max_iter){
         double novo_zr = zr * zr - zi * zi + cr;
         zi = 2.0 * zr * zi + ci;
         zr = novo_zr;
-
         iter++;
     }
     return (iter * 255) / max_iter;
 }
 
 void calcular_serial(int *imagem, int largura, int altura, int max_iter) {
+    for (int y = 0; y < altura; y++) {
+        for (int x = 0; x < largura; x++) {
+            imagem[y * largura + x] =
+                calcular_pixel(x, y, largura, altura, max_iter);
+        }
+    }
+}
+void calcular_openmp(int *imagem, int largura, int altura, int max_iter, int num_threads) {
+    #pragma omp parallel for num_threads(num_threads)
     for (int y = 0; y < altura; y++) {
         for (int x = 0; x < largura; x++) {
             imagem[y * largura + x] =
@@ -51,6 +62,11 @@ int salvar_imagem(const char *nome, int *imagem, int largura, int altura) {
     fclose(arquivo);
     return 1;
 }
+double tempo_atual() {
+    struct timespec t;
+    clock_gettime(CLOCK_MONOTONIC, &t);
+    return t.tv_sec + t.tv_nsec / 1000000000.0;
+}
 
 int main(int argc, char *argv[]) {
     if (argc != 5) {
@@ -67,13 +83,38 @@ int main(int argc, char *argv[]) {
         fprintf(stderr, "Erro: falha na alocacao de memoria.\n");
         return 1;
     }
+    double inicio = tempo_atual();
     calcular_serial(imagem, largura, altura, max_iter);
+    double fim = tempo_atual();
+    double tempo_serial = fim - inicio;
     
     if (!salvar_imagem("mandelbrot_ggm_serial.pgm", imagem, largura, altura)) {
         fprintf(stderr, "Erro: falha ao criar arquivo de saida.\n");
         free(imagem);
         return 1;
     }
+    inicio = tempo_atual();
+
+    calcular_openmp(imagem, largura, altura, max_iter, num_threads);
+    fim = tempo_atual();
+    double tempo_openmp = fim - inicio;
+    if (!salvar_imagem("mandelbrot_ggm_openmp.pgm", imagem, largura, altura)) {
+        fprintf(stderr, "Erro: falha ao criar arquivo de saida.\n");
+        free(imagem);
+        return 1;
+    }
+
+    FILE *tempos = fopen("times.txt", "w");
+
+    if (tempos == NULL) {
+        fprintf(stderr, "Erro: falha ao criar times.txt.\n");
+        free(imagem);
+        return 1;
+    }
+    fprintf(tempos, "Serial: %.6f\n", tempo_serial);
+    fprintf(tempos, "OpenMP: %.6f\n", tempo_openmp);
+
+    fclose(tempos);
     free(imagem);
     return 0;
 }

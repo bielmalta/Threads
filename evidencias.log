@@ -129,4 +129,77 @@ gcc mandelbrot.o -o mandelbrot
 2 7 7 10 12 255 255 255 38 7 
 2 5 7 7 10 10 22 12 7 5 
 2 2 5 7 7 7 7 7 5 5 
-[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggmelmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ make clean
+[?2004lrm -f mandelbrot.o mandelbrot
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ [?2004l
+exit
+
+Script done on 2026-08-29 19:23:15-03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-08-30 10:15:21-03:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="179" LINES="12"]
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ date
+[?2004lSun Aug 30 10:15:25 -03 2026
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ whoami
+[?2004lbielmalta
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ pwd
+[?2004l/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ make clean
+[?2004lrm -f mandelbrot.o mandelbrot
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ make
+[?2004lgcc -Wall -Wextra -std=c11 -c mandelbrot.c -o mandelbrot.o
+[01m[Kmandelbrot.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmandelbrot.c:93:12:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kprintf[m[K’ from incompatible pointer type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wincompatible-pointer-types-Wincompatible-pointer-types]8;;[m[K]
+   93 |     printf([01;35m[Ktempos[m[K, "Serial: %.6f\n", tempo_serial);
+      |            [01;35m[K^~~~~~[m[K
+      |            [01;35m[K|[m[K
+      |            [01;35m[KFILE *[m[K
+In file included from [01m[Kmandelbrot.c:2[m[K:
+[01m[K/usr/include/stdio.h:363:43:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char * restrict[m[K’ but argument is of type ‘[01m[KFILE *[m[K’
+  363 | extern int printf ([01;36m[Kconst char *__restrict __format[m[K, ...);
+      |                    [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+gcc mandelbrot.o -o mandelbrot
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ make clewan[K[K[Kan
+[?2004lrm -f mandelbrot.o mandelbrot
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ make
+[?2004lgcc -Wall -Wextra -std=c11 -c mandelbrot.c -o mandelbrot.o
+gcc mandelbrot.o -o mandelbrot
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ ./mandelbroy=t[K[K[K[Kt[Kot 500 500 1000 4
+[?2004l[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ cat times.txt
+[?2004lSerial: 0.198465
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ make clean
+[?2004lrm -f mandelbrot.o mandelbrot
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ make
+[?2004lgcc -Wall -Wextra -std=c11 -c mandelbrot.c -o mandelbrot.o
+[01m[Kmandelbrot.c:[m[K In function ‘[01m[Kcalcular_openmp[m[K’:
+[01m[Kmandelbrot.c:33:[m[K [01;35m[Kwarning: [m[Kignoring ‘[01m[K#pragma omp parallel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunknown-pragmas-Wunknown-pragmas]8;;[m[K]
+   33 |     #pragma omp parallel for num_threads(num_threads)
+      | 
+[01m[Kmandelbrot.c:32:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Knum_threads[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   32 | void calcular_openmp(int *imagem, int largura, int altura, int max_iter, [01;35m[Kint num_threads[m[K) {
+      |                                                                          [01;35m[K~~~~^~~~~~~~~~~[m[K
+gcc mandelbrot.o -o mandelbrot
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ Ç[Kmake clean
+[?2004lrm -f mandelbrot.o mandelbrot
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ make
+[?2004lgcc -Wall -Wextra -std=c11 -fopenmp -c mandelbrot.c -o mandelbrot.o
+gcc mandelbrot.o -o mandelbrot -fopenmp
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ [7m./mandelbrot 500 500 1000 4[27m./mandelbrot 500 500 1000 4
+[?2004l[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ cat times.txt
+[?2004lSerial: 0.194148
+OpenMP: 0.097221
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ [7mcmp mandelbrot_ggm_serial.pgm mandelbrot_ggm_openmp.pgm[27mcmp mandelbrot_ggm_serial.pgm mandelbrot_ggm_openmp.pgm
+[?2004lcmp: mandelbrot_ggm_openmp.pgm: No such file or directory
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ [7mecho $?[27mecho $?
+[?2004l2
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ mAK[K[Kake c[Kclean
+[?2004lrm -f mandelbrot.o mandelbrot
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ make
+[?2004lgcc -Wall -Wextra -std=c11 -fopenmp -c mandelbrot.c -o mandelbrot.o
+gcc mandelbrot.o -o mandelbrot -fopenmp
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ ./mandelbrot 500 500 1000 4
+[?2004l[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ [7mls -l mandelbrot_ggm_*.pgm[27mls -l mandelbrot_ggm_*.pgm
+[?2004l-rwxrwxrwx 1 bielmalta bielmalta 587757 Aug 30 10:40 [0m[01;32mmandelbrot_ggm_openmp.pgm[0m
+-rwxrwxrwx 1 bielmalta bielmalta 587757 Aug 30 10:40 [01;32mmandelbrot_ggm_serial.pgm[0m
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ [7mcmp mandelbrot_ggm_serial.pgm mandelbrot_ggm_openmp.pgm[27mcmp mandelbrot_ggm_serial.pgm mandelbrot_ggm_openmp.pgm
+[?2004l[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ echo $?
+[?2004l0
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[
