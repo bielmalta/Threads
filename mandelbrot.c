@@ -93,17 +93,23 @@ int calcular_pthreads1(int *imagem, int largura, int altura, int max_iter, int n
     DadosThread dados[num_threads];
 
     int linhas = altura / num_threads;
+    int criadas = 0;
+
     for (int i = 0; i < num_threads; i++) {
         dados[i].imagem = imagem;
         dados[i].largura = largura;
         dados[i].altura = altura;
         dados[i].max_iter = max_iter;
         dados[i].inicio = i * linhas;
-        dados[i].fim = (i == num_threads - 1) ? altura : (i + 1) * linhas; /*condicionais*/
+        dados[i].fim = (i == num_threads - 1) ? altura : (i + 1) * linhas;
 
         if (pthread_create(&threads[i], NULL, trabalho_pthreads1, &dados[i]) != 0) {
+            for (int j = 0; j < criadas; j++) {
+                pthread_join(threads[j], NULL);
+            }
             return 0;
         }
+        criadas++;
     }
     for (int i = 0; i < num_threads; i++) {
         pthread_join(threads[i], NULL);
@@ -125,6 +131,8 @@ int calcular_pthreads2(int *imagem, int largura, int altura, int max_iter, int n
     pthread_t threads[num_threads];
     DadosThread dados[num_threads];
 
+    int criadas = 0;
+
     for (int i = 0; i < num_threads; i++) {
         dados[i].imagem = imagem;
         dados[i].largura = largura;
@@ -132,9 +140,14 @@ int calcular_pthreads2(int *imagem, int largura, int altura, int max_iter, int n
         dados[i].max_iter = max_iter;
         dados[i].inicio = i;
         dados[i].passo = num_threads;
+
         if (pthread_create(&threads[i], NULL, trabalho_pthreads2, &dados[i]) != 0) {
+            for (int j = 0; j < criadas; j++) {
+                pthread_join(threads[j], NULL);
+            }
             return 0;
         }
+        criadas++;
     }
     for (int i = 0; i < num_threads; i++) {
         pthread_join(threads[i], NULL);
@@ -148,37 +161,49 @@ int main(int argc, char *argv[]) {
         return 1;
     }
     int largura, altura, max_iter, num_threads;
+
     if (!ler_inteiro(argv[1], &largura) || !ler_inteiro(argv[2], &altura) || !ler_inteiro(argv[3], &max_iter) || !ler_inteiro(argv[4], &num_threads)) {
         fprintf(stderr, "Erro: parametros invalidos.\n");
         return 1;
     }
+
+    if (num_threads > altura) {
+        fprintf(stderr, "Erro: numero de threads maior que a altura.\n");
+        return 1;
+    }
+
     int *imagem = malloc((size_t)largura * altura * sizeof(int));
+
     if (imagem == NULL) {
         fprintf(stderr, "Erro: falha na alocacao de memoria.\n");
         return 1;
     }
+
     double inicio = tempo_atual();
+
     calcular_serial(imagem, largura, altura, max_iter);
+
     double fim = tempo_atual();
     double tempo_serial = fim - inicio;
-    
-    if (!salvar_imagem("mandelbrot_ggm_serial.pgm", imagem, largura, altura)) {
+
+    if (!salvar_imagem("mandelbrot_ggm_serial.pgm",imagem, largura, altura)) {
         fprintf(stderr, "Erro: falha ao criar arquivo de saida.\n");
         free(imagem);
         return 1;
     }
+
     inicio = tempo_atual();
 
     calcular_openmp(imagem, largura, altura, max_iter, num_threads);
+
     fim = tempo_atual();
     double tempo_openmp = fim - inicio;
+
     if (!salvar_imagem("mandelbrot_ggm_openmp.pgm", imagem, largura, altura)) {
         fprintf(stderr, "Erro: falha ao criar arquivo de saida.\n");
         free(imagem);
         return 1;
     }
-    for (int i = 0; i < largura * altura; i++)
-        imagem[i] = 0;
 
     inicio = tempo_atual();
 
@@ -187,8 +212,15 @@ int main(int argc, char *argv[]) {
         free(imagem);
         return 1;
     }
+
     fim = tempo_atual();
     double tempo_pthreads1 = fim - inicio;
+
+    if (!salvar_imagem("mandelbrot_ggm_pthreads1.pgm", imagem, largura, altura)) {
+        fprintf(stderr, "Erro: falha ao criar arquivo de saida.\n");
+        free(imagem);
+        return 1;
+    }
 
     inicio = tempo_atual();
 
@@ -197,14 +229,9 @@ int main(int argc, char *argv[]) {
         free(imagem);
         return 1;
     }
+
     fim = tempo_atual();
     double tempo_pthreads2 = fim - inicio;
-
-    if (!salvar_imagem("mandelbrot_ggm_pthreads1.pgm", imagem, largura, altura)) {
-        fprintf(stderr, "Erro: falha ao criar arquivo de saida.\n");
-        free(imagem);
-        return 1;
-    }
     if (!salvar_imagem("mandelbrot_ggm_pthreads2.pgm", imagem, largura, altura)) {
         fprintf(stderr, "Erro: falha ao criar arquivo de saida.\n");
         free(imagem);

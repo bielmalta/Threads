@@ -202,4 +202,305 @@ gcc mandelbrot.o -o mandelbrot -fopenmp
 [?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ [7mcmp mandelbrot_ggm_serial.pgm mandelbrot_ggm_openmp.pgm[27mcmp mandelbrot_ggm_serial.pgm mandelbrot_ggm_openmp.pgm
 [?2004l[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ echo $?
 [?2004l0
-[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ make clean
+[?2004lrm -f mandelbrot.o mandelbrot
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ make
+[?2004lgcc -Wall -Wextra -std=c11 -fopenmp -pthread -c mandelbrot.c -o mandelbrot.o
+gcc mandelbrot.o -o mandelbrot -fopenmp -pthread
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ ./mandelbroty[K 500 500 1000 4
+[?2004l[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ ca[K[K[7mcat times.txt[27mcat times.txt
+[?2004lSerial: 0.320994
+OpenMP: 0.154476
+Pthreads1: 0.154701
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ [7mcmp mandelbrot_ggm_serial.pgm mandelbrot_ggm_pthreads1.pgm[27m
+[7mecho $?[27m[A]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ cmp mandelbrot_ggm_serial.pgm mandelbrot_ggm_pthreads1.pgm
+echo $?
+[?2004l0
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ make clean
+[?2004lrm -f mandelbrot.o mandelbrot
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ make
+[?2004lgcc -Wall -Wextra -std=c11 -fopenmp -pthread -c mandelbrot.c -o mandelbrot.o
+[01m[Kmandelbrot.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmandelbrot.c:206:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktempo_pthreads2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  206 |     double [01;35m[Ktempo_pthreads2[m[K = fim - inicio;
+      |            [01;35m[K^~~~~~~~~~~~~~~[m[K
+gcc mandelbrot.o -o mandelbrot -fopenmp -pthread
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ make clean
+[?2004lrm -f mandelbrot.o mandelbrot
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ make
+[?2004lgcc -Wall -Wextra -std=c11 -fopenmp -pthread -c mandelbrot.c -o mandelbrot.o
+gcc mandelbrot.o -o mandelbrot -fopenmp -pthread
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ ./mandelbroy[Kt 500 500 1000 4
+[?2004l[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ echo$? $?[C[C
+[?2004l0
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ [7mcmp mandelbrot_ggm_serial.pgm mandelbrot_ggm_pthreads2.pgm[27mcmp mandelbrot_ggm_serial.pgm mandelbrot_ggm_pthreads2.pgm
+[?2004l[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ [7mecho $?[27mecho $?
+[?2004l0
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ ./mandelbrot 500 500 1000[K[K[K[K[K[K[K[K[K[K[K[K1000 1000 2000 8
+[?2004l[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ [7mcmp mandelbrot_ggm_serial.pgm mandelbrot_ggm_pthreads2.pgm[27m
+[7mecho $?[27m[A]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ cmp mandelbrot_ggm_serial.pgm mandelbrot_ggm_pthreads2.pgm
+echo $?
+[?2004l0
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ git sa[Ktatus
+[?2004lOn branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   evidencias.log[m
+	[31mmodified:   makefile[m
+	[31mmodified:   mandelbrot[m
+	[31mmodified:   mandelbrot.c[m
+	[31mmodified:   mandelbrot.o[m
+	[31mmodified:   mandelbrot_ggm_openmp.pgm[m
+	[31mmodified:   mandelbrot_ggm_serial.pgm[m
+	[31mmodified:   times.txt[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mmandelbrot_ggm_pthreads1.pgm[m
+	[31mmandelbrot_ggm_pthreads2.pgm[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ git add mandelbrot.c makefile
+[?2004l[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ git commit -m "implementando segunda e[K[K[K[K[K[K[K[K[Kprimeira e segunda estratégia do pthreads"
+[?2004l[main 5679118] implementando primeira e segunda estratégia do pthreads
+ 2 files changed, 111 insertions(+), 2 deletions(-)
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ git status
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   evidencias.log[m
+	[31mmodified:   mandelbrot[m
+	[31mmodified:   mandelbrot.o[m
+	[31mmodified:   mandelbrot_ggm_openmp.pgm[m
+	[31mmodified:   mandelbrot_ggm_serial.pgm[m
+	[31mmodified:   times.txt[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mmandelbrot_ggm_pthreads1.pgm[m
+	[31mmandelbrot_ggm_pthreads2.pgm[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ cos[Kde .gitignore
+[?2004l[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ [7mgit rm --cached mandelbrot[27m
+[7mgit rm --cached mandelbrot.o[27m
+[7mgit rm --cached mandelbrot_ggm_openmp.pgm[27m
+[7mgit rm --cached mandelbrot_ggm_serial.pgm[27m
+[7mgit rm --cached times.txt[27m[A[A[A[A]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ git rm --cached mandelbrot
+git rm --cached mandelbrot.o
+git rm --cached mandelbrot_ggm_openmp.pgm
+git rm --cached mandelbrot_ggm_serial.pgm
+git rm --cached times.txt
+[?2004lrm 'mandelbrot'
+rm 'mandelbrot.o'
+rm 'mandelbrot_ggm_openmp.pgm'
+rm 'mandelbrot_ggm_serial.pgm'
+rm 'times.txt'
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ git status
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mdeleted:    mandelbrot[m
+	[32mdeleted:    mandelbrot.o[m
+	[32mdeleted:    mandelbrot_ggm_openmp.pgm[m
+	[32mdeleted:    mandelbrot_ggm_serial.pgm[m
+	[32mdeleted:    times.txt[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   evidencias.log[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mmandelbrot[m
+	[31mmandelbrot.o[m
+	[31mmandelbrot_ggm_openmp.pgm[m
+	[31mmandelbrot_ggm_pthreads1.pgm[m
+	[31mmandelbrot_ggm_pthreads2.pgm[m
+	[31mmandelbrot_ggm_serial.pgm[m
+	[31mtimes.txt[m
+
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ [7mcat .gitignore[27mcat .gitignore
+[?2004lcat: .gitignore: No such file or directory
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ [7m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[27m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads
+[?2004lbash: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads: Is a directory
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ [7mnano .gitignore[27mnano .gitignore
+[?2004l[?2004h[?1049h[22;0;0t[1;12r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[10;84H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 7.2                                                                         .gitignore                                                                                  [1;178H(B[m[11d(B[0;7m^G(B[m Help[11;18H(B[0;7m^O(B[m Write Out     (B[0;7m^W(B[m Where Is[52G(B[0;7m^K(B[m Cut[11;69H(B[0;7m^T(B[m Execute[86G(B[0;7m^C(B[m Location[103G(B[0;7mM-U(B[m Undo[11;120H(B[0;7mM-A(B[m Set Mark     (B[0;7mM-](B[m To Bracket   (B[0;7mM-Q(B[m Previous[12d(B[0;7m^X(B[m Exit[12;18H(B[0;7m^R(B[m Read File     (B[0;7m^\(B[m Replace[52G(B[0;7m^U(B[m Paste[12;69H(B[0;7m^J(B[m Justify[86G(B[0;7m^/(B[m Go To Line    (B[0;7mM-E(B[m Redo[12;120H(B[0;7mM-6(B[m Copy[12;137H(B[0;7m^Q(B[m Where Was     (B[0;7mM-W(B[m Next[2d[?12l[?25h[?25l[1;99H(B[0;7m*[10d(B[m[K[1;178H[2dmandelbrot[3dmandelbrot.o[4dmandelbrot_ggm_*.pgm[5dtimes.txt[?12l[?25h[?25l[11;18H[27X[11;45H(B[0;7mM-D(B[m DOS Format[11;69H          [86G   (B[0;7mM-A(B[m Append            [11;120H             (B[0;7mM-B(B[m Backup File[K[12;2H(B[0;7mC(B[m Cancel[12;18H[27X[12;45H(B[0;7mM-M(B[m Mac Format [12;69H          [86G   (B[0;7mM-P(B[m Prepend           [12;120H             (B[0;7m^T(B[m Browse[K[10d(B[0;7mFile Name to Write: .gitignore                                                                                                                                                     [10;31H(B[m[?12l[?25h[?25l[10;82H[1K (B[0;7m[ Writing... ](B[m[K[1;99H(B[0;7m [178G(B[m[10;82H(B[0;7m[ Wrote 4 lines ](B[m[11;18H(B[0;7m^O(B[m Write Out     (B[0;7m^W(B[m Where Is      (B[0;7m^K(B[m Cut [11;69H(B[0;7m^T(B[m Execute[86G(B[0;7m^C(B[m Location      (B[0;7mM-U(B[m Undo[11;120H(B[0;7mM-A(B[m Set Mark     (B[0;7mM-](B[m To Bracket   (B[0;7mM-Q(B[m Previous[12;2H(B[0;7mX(B[m Exit  [12;18H(B[0;7m^R(B[m Read File     (B[0;7m^\(B[m Replace       (B[0;7m^U(B[m Paste[12;69H(B[0;7m^J(B[m Justify[86G(B[0;7m^/(B[m Go To Line    (B[0;7mM-E(B[m Redo[12;120H(B[0;7mM-6(B[m Copy         (B[0;7m^Q(B[m Where Was     (B[0;7mM-W(B[m Next[?12l[?25h[5;10H[?25l[10d[J[12d[?12l[?25h[12;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ [7mcat .gitignore[27mcat .gitignore
+[?2004lmandelbrot
+mandelbrot.o
+mandelbrot_ggm_*.pgm
+times.txt
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ git status
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mdeleted:    mandelbrot[m
+	[32mdeleted:    mandelbrot.o[m
+	[32mdeleted:    mandelbrot_ggm_openmp.pgm[m
+	[32mdeleted:    mandelbrot_ggm_serial.pgm[m
+	[32mdeleted:    times.txt[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   evidencias.log[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31m.gitignore[m
+
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ [7mgit add .gitignore[27mgit add .gitignore
+[?2004l[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ git status
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   .gitignore[m
+	[32mdeleted:    mandelbrot[m
+	[32mdeleted:    mandelbrot.o[m
+	[32mdeleted:    mandelbrot_ggm_openmp.pgm[m
+	[32mdeleted:    mandelbrot_ggm_serial.pgm[m
+	[32mdeleted:    times.txt[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   evidencias.log[m
+
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ [7mgit commit -m "Ignora arquivos gerados na compilacao e execucao"[27mgit commit -m "Ignora arquivos gerados na compilacao e execucao"
+[?2004l[main 44cc160] Ignora arquivos gerados na compilacao e execucao
+ 6 files changed, 4 insertions(+), 1002 deletions(-)
+ create mode 100644 .gitignore
+ delete mode 100644 mandelbrot
+ delete mode 100644 mandelbrot.o
+ delete mode 100644 mandelbrot_ggm_openmp.pgm
+ delete mode 100644 mandelbrot_ggm_serial.pgm
+ delete mode 100644 times.txt
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ [7mgit status[27mgit status
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   evidencias.log[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ [7m./mandelbrot[27m./mandelbrot
+[?2004lErro: quantidade de argumentos invalida.
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ [7m./mandelbrot 500 500 1000[27m./mandelbrot 500 500 1000
+[?2004lErro: quantidade de argumentos invalida.
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ [7m./mandelbrot abc 500 1000 4[27m./mandelbrot abc 500 1000 4
+[?2004lErro: parametros invalidos.
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ [7m./mandelbrot -10 500 1000 4[27m./mandelbrot -10 500 1000 4
+[?2004lErro: parametros invalidos.
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ [7m./mandelbrot 500 0 1000 4[27m./mandelbrot 500 0 1000 4
+[?2004lErro: parametros invalidos.
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ [7m./mandelbrot 500 500 0 4[27m./mandelbrot 500 500 0 4
+[?2004lErro: parametros invalidos.
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ [7m./mandelbrot 500 500 1000 0[27m./mandelbrot 500 500 1000 0
+[?2004lErro: parametros invalidos.
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ make clean
+[?2004lrm -f mandelbrot.o mandelbrot
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ make
+[?2004lgcc -Wall -Wextra -std=c11 -fopenmp -pthread -c mandelbrot.c -o mandelbrot.o
+gcc mandelbrot.o -o mandelbrot -fopenmp -pthread
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ [7m./mandelbrot 1000 1000 2000 8[27m./mandelbrot 1000 1000 2000 8
+[?2004l[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ cat times.txt
+[?2004lSerial: 2.538996
+OpenMP: 0.886469
+Pthreads1: 0.856574
+Pthreads2: 0.340924
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ [7mcmp mandelbrot_ggm_serial.pgm mandelbrot_ggm_openmp.pgm[27m
+[7mecho $?[27m[A]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ cmp mandelbrot_ggm_serial.pgm mandelbrot_ggm_openmp.pgm
+echo $?
+[?2004l0
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ 
+[7mcmp mandelbrot_ggm_serial.pgm mandelbrot_ggm_pthreads1.pgm[27m
+[7mecho $?[27m[Acmp mandelbrot_ggm_serial.pgm mandelbrot_ggm_pthreads1.pgm
+echo $?
+[?2004l0
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ [7mcmp mandelbrot_ggm_serial.pgm mandelbrot_ggm_pthreads2.pgm[27m
+[7mecho $?[27m[A]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ cmp mandelbrot_ggm_serial.pgm mandelbrot_ggm_pthreads2.pgm
+echo $?
+[?2004l0
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ make clean
+[?2004lrm -f mandelbrot.o mandelbrot
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ make
+[?2004lgcc -Wall -Wextra -std=c11 -fopenmp -pthread -c mandelbrot.c -o mandelbrot.o
+gcc mandelbrot.o -o mandelbrot -fopenmp -pthread
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ ./mandelbrot 1000 1000 1[K2---[K[K[K000 8
+[?2004l[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ [7mcmp mandelbrot_ggm_serial.pgm mandelbrot_ggm_openmp.pgm[27m
+[7mecho $?[27m
+
+[7mcmp mandelbrot_ggm_serial.pgm mandelbrot_ggm_pthreads1.pgm[27m
+[7mecho $?[27m
+
+[7mcmp mandelbrot_ggm_serial.pgm mandelbrot_ggm_pthreads2.pgm[27m
+[7mecho $?[27m[A[A[A[A[A[A[A]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ cmp mandelbrot_ggm_serial.pgm mandelbrot_ggm_openmp.pgm
+echo $?
+
+cmp mandelbrot_ggm_serial.pgm mandelbrot_ggm_pthreads1.pgm
+echo $?
+
+cmp mandelbrot_ggm_serial.pgm mandelbrot_ggm_pthreads2.pgm
+echo $?
+[?2004l0
+0
+0
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ ls -la
+[?2004ltotal 9292
+drwxrwxrwx 1 bielmalta bielmalta     512 Aug 30 12:01 [0m[34;42m.[0m
+drwxrwxrwx 1 bielmalta bielmalta     512 Aug 27 14:14 [34;42m..[0m
+drwxrwxrwx 1 bielmalta bielmalta     512 Aug 30 11:42 [34;42m.git[0m
+-rwxrwxrwx 1 bielmalta bielmalta      55 Aug 30 11:39 [01;32m.gitignore[0m
+-rwxrwxrwx 1 bielmalta bielmalta      39 Aug 27 14:14 [01;32mREADME.md[0m
+-rwxrwxrwx 1 bielmalta bielmalta   50248 Aug 30 12:01 [01;32mevidencias.log[0m
+-rwxrwxrwx 1 bielmalta bielmalta     219 Aug 30 11:06 [01;32mmakefile[0m
+-rwxrwxrwx 1 bielmalta bielmalta   21440 Aug 30 12:01 [01;32mmandelbrot[0m
+-rwxrwxrwx 1 bielmalta bielmalta    7421 Aug 30 12:00 [01;32mmandelbrot.c[0m
+-rwxrwxrwx 1 bielmalta bielmalta   10848 Aug 30 12:01 [01;32mmandelbrot.o[0m
+-rwxrwxrwx 1 bielmalta bielmalta 2342413 Aug 30 12:01 [01;32mmandelbrot_ggm_openmp.pgm[0m
+-rwxrwxrwx 1 bielmalta bielmalta 2342413 Aug 30 12:01 [01;32mmandelbrot_ggm_pthreads1.pgm[0m
+-rwxrwxrwx 1 bielmalta bielmalta 2342413 Aug 30 12:01 [01;32mmandelbrot_ggm_pthreads2.pgm[0m
+-rwxrwxrwx 1 bielmalta bielmalta 2342413 Aug 30 12:01 [01;32mmandelbrot_ggm_serial.pgm[0m
+-rwxrwxrwx 1 bielmalta bielmalta      74 Aug 30 12:01 [01;32mtimes.txt[0m
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ make clean
+[?2004lrm -f mandelbrot.o mandelbrot
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ [7mrm -f mandelbrot_ggm_*.pgm[27m
+[7mrm -f times.txt[27m[A]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ rm -f mandelbrot_ggm_*.pgm
+rm -f times.txt
+[?2004l[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ git add README.md
+[?2004l[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ git commit -m "criando o README"
+[?2004l[main cebe1ee] criando o README
+ 1 file changed, 36 insertions(+), 2 deletions(-)
+[?2004h]0;bielmalta@AlienGabriel: /mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[01;32mbielmalta@AlienGabriel[00m:[01;34m/mnt/c/Users/bielm/OneDrive/Documentos/CESAR/ggm/Threads[00m$ git status
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   evidencias.log[m
+	[31mmodified:   mandelbrot.c[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
