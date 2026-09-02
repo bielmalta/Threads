@@ -33,6 +33,7 @@ Onde:
 - num_threads: quantidade de threads utilizadas nas versões paralelas
 
 Após a execução, são gerados:
+Exemplos:
 - mandelbrot_ggm_serial.pgm
 - mandelbrot_ggm_openmp.pgm
 - mandelbrot_ggm_pthreads1.pgm
