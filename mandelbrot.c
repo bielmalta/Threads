@@ -29,7 +29,13 @@ int calcular_pixel(int x, int y, int largura, int altura, int max_iter){
         zr = novo_zr;
         iter++;
     }
-    return (iter * 255) / max_iter;
+    return iter;
+}
+
+void normalizar_serial(int *imagem, int total, int max_iter) {
+    for (int i = 0; i < total; i++) {
+        imagem[i] = (imagem[i] * 255) / max_iter;
+    }
 }
 
 void calcular_serial(int *imagem, int largura, int altura, int max_iter) {
@@ -119,27 +125,24 @@ int calcular_pthreads1(int *imagem, int largura, int altura, int max_iter, int n
 void *trabalho_pthreads2(void *arg) {
     DadosThread *dados = (DadosThread *)arg;
 
-    for (int y = dados->inicio; y < dados->altura; y += dados->passo) {
-        for (int x = 0; x < dados->largura; x++) {
-            dados->imagem[y * dados->largura + x] = calcular_pixel(x, y, dados->largura, dados->altura, dados->max_iter);
-        }
+    for (int i = dados->inicio; i < dados->fim; i++) {
+        dados->imagem[i] = (dados->imagem[i] * 255) / dados->max_iter;
     }
     return NULL;
 }
 
-int calcular_pthreads2(int *imagem, int largura, int altura, int max_iter, int num_threads) {
+int calcular_pthreads2(int *imagem, int total, int max_iter, int num_threads) {
     pthread_t threads[num_threads];
     DadosThread dados[num_threads];
 
+    int bloco = total / num_threads;
     int criadas = 0;
 
     for (int i = 0; i < num_threads; i++) {
         dados[i].imagem = imagem;
-        dados[i].largura = largura;
-        dados[i].altura = altura;
         dados[i].max_iter = max_iter;
-        dados[i].inicio = i;
-        dados[i].passo = num_threads;
+        dados[i].inicio = i * bloco;
+        dados[i].fim = (i == num_threads - 1) ? total : (i + 1) * bloco;
 
         if (pthread_create(&threads[i], NULL, trabalho_pthreads2, &dados[i]) != 0) {
             for (int j = 0; j < criadas; j++) {
@@ -182,10 +185,10 @@ int main(int argc, char *argv[]) {
     double inicio = tempo_atual();
 
     calcular_serial(imagem, largura, altura, max_iter);
+    normalizar_serial(imagem, largura * altura, max_iter);
 
     double fim = tempo_atual();
     double tempo_serial = fim - inicio;
-
     if (!salvar_imagem("mandelbrot_ggm_serial.pgm",imagem, largura, altura)) {
         fprintf(stderr, "Erro: falha ao criar arquivo de saida.\n");
         free(imagem);
@@ -195,10 +198,10 @@ int main(int argc, char *argv[]) {
     inicio = tempo_atual();
 
     calcular_openmp(imagem, largura, altura, max_iter, num_threads);
+    normalizar_serial(imagem, largura * altura, max_iter);
 
     fim = tempo_atual();
     double tempo_openmp = fim - inicio;
-
     if (!salvar_imagem("mandelbrot_ggm_openmp.pgm", imagem, largura, altura)) {
         fprintf(stderr, "Erro: falha ao criar arquivo de saida.\n");
         free(imagem);
@@ -213,6 +216,8 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
+    normalizar_serial(imagem, largura * altura, max_iter);
+
     fim = tempo_atual();
     double tempo_pthreads1 = fim - inicio;
 
@@ -224,14 +229,16 @@ int main(int argc, char *argv[]) {
 
     inicio = tempo_atual();
 
-    if (!calcular_pthreads2(imagem, largura, altura, max_iter, num_threads)) {
+    calcular_serial(imagem, largura, altura, max_iter);
+
+    if (!calcular_pthreads2(imagem, largura * altura, max_iter, num_threads)) {
         fprintf(stderr, "Erro: falha ao criar threads.\n");
         free(imagem);
         return 1;
     }
-
     fim = tempo_atual();
     double tempo_pthreads2 = fim - inicio;
+
     if (!salvar_imagem("mandelbrot_ggm_pthreads2.pgm", imagem, largura, altura)) {
         fprintf(stderr, "Erro: falha ao criar arquivo de saida.\n");
         free(imagem);
